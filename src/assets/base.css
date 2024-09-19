@@ -8,9 +8,11 @@
   --color-text: #111111;
   --color-text-secondary: #777;
   --color-primary: #01a7fd;
-  --color-success: var(--vt-c-green);
-  --color-warning: var(--vt-c-yellow);
-  --color-danger: var(--vt-c-red);
+  --color-disabled: #ceecfc;
+  --color-hover: #0f79af;
+  --color-hover-white: #ffffffcd;
+  --color-primary-white: #01a7fd;
+  --color-disabled: #ceecfc;
 }
 
 * {

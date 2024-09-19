@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import BaseTitle from './ui/BaseTitle.vue'
-import { useEmployeeStore, type Employee } from '@/stores/employer'
+import { useEmployeeStore } from '@/stores/employer'
 const { employer } = useEmployeeStore()
-const getPersonInfoDetails = (name: string, age: number): string =>
+const getPersonInfoDetails = (name: string, age?: number): string =>
   (name ? name : 'Имя не заполнено') +
   ', ' +
   (age || age === 0 ? age + ' лет' : 'Возраст не указан')

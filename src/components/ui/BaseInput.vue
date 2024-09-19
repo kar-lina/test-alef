@@ -9,21 +9,7 @@
 </template>
 <script lang="ts" setup>
 import { useField } from 'vee-validate'
-
-const props = defineProps({
-  label: {
-    type: String,
-    default: 'Search...'
-  },
-  placeholder: {
-    type: String,
-    default: 'Введите текст...'
-  },
-  name: {
-    type: String,
-    default: ''
-  }
-})
+const props = defineProps<{ label: string; placeholder: string; name: string }>()
 const { value, errorMessage } = useField(() => props.name)
 </script>
 <style lang="css">
@@ -31,7 +17,7 @@ const { value, errorMessage } = useField(() => props.name)
   display: flex;
   flex-direction: column;
   gap: 4px;
-  max-width: 100%;
+  width: 100%;
 }
 .input__label {
   display: block;
